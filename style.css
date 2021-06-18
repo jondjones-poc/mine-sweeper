@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+:root {
+    --primary: #d1eab9;
+    --background: #9bd285;
+    --checked: #6e906a;
+    --text: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P',sans-serif;
+    background-color: #b5ff87;
+    font-size: 14px;
+    color: var(--text);
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--background);
+}
+
+.grid div {
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--primary);
+    padding: 5px;
+}
+
+.bomb {
+    font-size: 1rem;
+    padding: unset;
+}
+
+.checked {
+    background-color: var(--checked);
+}
+
+
+.result-container {
+    margin-top: 1rem;
+}
